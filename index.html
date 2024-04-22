@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catch The Insect</title>
+  <style>
+    /* Your CSS styles here */
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #516dff;
+      color: #fff;
+      font-family: "Press Start 2P", sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Rest of your CSS styles */
+  </style>
+</head>
+<body>
+<div class="screen">
+  <h1>Catch The Insect</h1>
+  <button class="btn" id="start-btn">Play Game</button>
+</div>
+<div class="screen">
+  <h1>What is your "favorite" insect?</h1>
+  <ul class="insects-list">
+    <li>
+      <button class="choose-insect-btn">
+        <p>Fly</p>
+        <img
+          src="http://pngimg.com/uploads/fly/fly_PNG3946.png"
+          alt="fly"
+        />
+      </button>
+    </li>
+    <!-- Rest of your HTML content -->
+  </ul>
+</div>
+<div class="screen game-container" id="game-container">
+  <h3 id="time" class="time">Time: 00:00</h3>
+  <h3 id="score" class="score">Score: 0</h3>
+  <h5 id="message" class="message">
+    Are you annoyed yet? <br />
+    You are playing an impossible game!!
+  </h5>
+</div>
+<script>
+  // Your JavaScript code here
+  const screens = document.querySelectorAll(".screen");
+  const chooseInsectButtons = document.querySelectorAll(".choose-insect-btn");
+  const startButton = document.getElementById("start-btn");
+  const gameContainer = document.getElementById("game-container");
+  const timeElement = document.getElementById("time");
+  const scoreElement = document.getElementById("score");
+  const message = document.getElementById("message");
+  let seconds = 0;
+  let score = 0;
+  let selectedInsect = {};
+
+  // Rest of your JavaScript code
+</script>
+</body>
+</html>
